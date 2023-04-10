@@ -35,7 +35,7 @@ module.exports = {
   config: JSON.stringify({
       apiUrl: '',
       imageapiUrl: '',
-      publicPath : '/react/template/'       
+      publicPath : '/'       
   })
 },
  output: {
