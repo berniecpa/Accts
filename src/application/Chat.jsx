@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import Chatlist from '../application/Chatlist'
+import Chatlist from '../application/chatlist'
 import {img,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img1} from "../_components/imagepath"
 import Header from '../layouts/Header'
 import Sidebar from '../layouts/Sidebar'
