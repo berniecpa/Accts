@@ -3,8 +3,8 @@
 const path = require('path');
 const webpack = require('webpack');
 
-// const publicPath = '/react/template/';
-const publicPath = '/login';
+const publicPath = '/react/template/';
+// const publicPath = '/';
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
