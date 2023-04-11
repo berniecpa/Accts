@@ -3,7 +3,7 @@
 const path = require('path');
 const webpack = require('webpack');
 
-const publicPath = '/';
+const publicPath = '/public';
 // const publicPath = '/';
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -35,7 +35,7 @@ module.exports = {
   config: JSON.stringify({
       apiUrl: '',
       imageapiUrl: '',
-      publicPath : '/'       
+      publicPath : '/public'       
   })
 },
  output: {
