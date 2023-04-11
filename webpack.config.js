@@ -40,7 +40,7 @@ module.exports = {
 },
  output: {
    filename: 'js/[name].bundle.js',
-   path: path.resolve(__dirname, 'build'), // base path where to send compiled assets
+   path: path.resolve(__dirname, 'dist'), // base path where to send compiled assets
    publicPath: publicPath,
  },
  resolve: {
