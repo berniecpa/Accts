@@ -5,9 +5,6 @@ import config from 'config';
 
 const AppRouter = (props) => {
 
-    if (location.pathname === "/") {
-        return (<Redirect to={'/index'} />)
-    }
     return(
         <Router basename={`${config.publicPath}`}>
              <Route render={(props)=> <AppContainer {...props}/>} />
