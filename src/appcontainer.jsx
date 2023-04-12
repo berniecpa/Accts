@@ -76,7 +76,7 @@ const AppContainer =  (props) => {
                  <StickySidebar />                                           
             <Switch>    
                                              
-              <Route path="/index" component={Dashboard} />
+              <Route exact path="/" component={Dashboard} />
               <Route path="/indextwo" component={Indextwo} />
               <Route path="/indexthree" component={Indexthree} />
               <Route path="/indexfour" component={Indexfour} />
