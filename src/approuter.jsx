@@ -4,6 +4,10 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import config from 'config';
 
 const AppRouter = (props) => {
+
+    if (location.pathname === "/") {
+        return (<Redirect to={'/index'} />)
+    }
     return(
         <Router basename={`${config.publicPath}`}>
              <Route render={(props)=> <AppContainer {...props}/>} />
