@@ -72,7 +72,7 @@ const AppContainer =  (props) => {
  
  
     return (
-      <Router basenameind={`${config.publicPath}`}>
+      <Router basename={`${config.publicPath}`}>
                  <StickySidebar />                                           
             <Switch>    
                                              
