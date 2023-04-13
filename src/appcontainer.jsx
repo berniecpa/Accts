@@ -75,7 +75,8 @@ const AppContainer =  (props) => {
       <Router basename={`${config.publicPath}`}>
                  <StickySidebar />                                           
             <Switch>    
-                                             
+
+              <Route index component={Login} />                               
               <Route exact path="/" component={Dashboard} />
               <Route path="/indextwo" component={Indextwo} />
               <Route path="/indexthree" component={Indexthree} />
