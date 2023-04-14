@@ -73,7 +73,7 @@ const AppContainer =  (props) => {
  
     return (
       <Router basename={`${config.publicPath}`}>
-                 <StickySidebar />                                           
+                                                          
             <Switch>    
 
               <Route exact path="/">  
