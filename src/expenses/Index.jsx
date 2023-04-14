@@ -102,7 +102,7 @@ const Expenses = () => {
             width:"250px",							
         },																																			
 		{
-			name: 'Customer',			
+			name: 'Customer',	//this needs to be Vendor information NOT Customer		
 			sortable: true,
 			cell: row => <Media className="user-dt"><a href="/profile" className="avatar avatar-sm me-2"><img src={row.img_url} className="avatar-img rounded-circle" /></a><Media.Body>{row.Customer}</Media.Body></Media>,
             width:"250px",
