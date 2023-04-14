@@ -84,18 +84,6 @@ const Sidebar = (props) => {
                             <li className={`${'/settings' === pathName || '/preferences' === pathName || '/tax-types' === pathName || '/expense-category' === pathName || '/notifications' === pathName || '/change-password' === pathName || '/delete-account' === pathName ? 'active' : ''}`}>
                                 <Link to="/settings"><FeatherIcon icon="settings" /> <span>Settings</span></Link>
                             </li>
-                            <li className={`${'/chat' === pathName || '/calendar' === pathName || '/inbox' === pathName ? 'active submenu' : 'submenu'}`}>
-                                <Link to="#" className={isSideMenu == "application" ? "subdrop" : ""} onClick={() => toggleSidebar(isSideMenu == "application" ? "" : "application")}><FeatherIcon icon="grid" /> <span> Application</span> <span className="menu-arrow"></span></Link>
-                                {
-                                    isSideMenu == "application" ?
-                                        <ul>
-                                            <li className={`${'/chat' === pathName ? 'active' : ''}`}><Link to="/chat">Chat</Link></li>
-                                            <li className={`${'/calendar' === pathName ? 'active' : ''}`}><Link to="/calendar">Calendar</Link></li>
-                                            <li className={`${'/inbox' === pathName ? 'active' : ''}`}><Link to="/inbox">Email</Link></li>
-                                        </ul> : ""
-                                }
-
-                            </li>
                         </ul>
                     </div>
                 </div>
