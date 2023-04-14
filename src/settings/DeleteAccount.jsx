@@ -47,7 +47,7 @@ const DeleteAccount = () => {
 								<div className="card-body">
 								
 									<form>
-										<p className="card-text">When you delete your account, you lose access to Kanakku account services, and we permanently delete your personal data.</p>
+										<p className="card-text">When you delete your account, you lose access to account services, and we permanently delete your personal data.</p>
 										<p className="card-text">Are you sure you want to close your account?</p>
 
 										<div className="form-group">
