@@ -1,5 +1,5 @@
 import React, {useState,useEffect} from "react";
-import { Route, BrowserRouter as Router, Switch,useLocation  } from "react-router-dom";
+import { Route, Redirect, BrowserRouter as Router, Switch,useLocation  } from "react-router-dom";
 import Dashboard from './dashboard/Index';
 import Indextwo from './dashboard/Indextwo';
 import Indexthree from './dashboard/Indexthree';
@@ -73,10 +73,13 @@ const AppContainer =  (props) => {
  
     return (
       <Router basename={`${config.publicPath}`}>
-                 <StickySidebar />                                           
+                                                          
             <Switch>    
-                                             
-              <Route exact path="/" component={Dashboard} />
+
+              <Route exact path="/">  
+                  <Redirect to="/login" />
+              </Route>           
+              <Route path="/index" component={Dashboard} />
               <Route path="/indextwo" component={Indextwo} />
               <Route path="/indexthree" component={Indexthree} />
               <Route path="/indexfour" component={Indexfour} />
