@@ -1,0 +1,16 @@
+type CustomerData @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  FirstName: String
+  LastName: String
+  CompanyName: String
+  Email: AWSEmail
+  Phone: AWSPhone
+  Website: AWSURL
+  BillingCountry: String
+  BillingState: String
+  BillingCity: String
+  BillingAddress: String
+  BillingPhone: AWSPhone
+  BillingZipCode: String
+  untitledfield: String
+}

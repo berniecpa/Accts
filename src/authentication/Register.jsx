@@ -5,6 +5,7 @@ import { useForm, Controller } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup';
 import  { alphaNumericPattern, emailrgx } from '../assets/constant'
+import { Auth } from 'aws-amplify';
 
 const schema = yup
   .object({
