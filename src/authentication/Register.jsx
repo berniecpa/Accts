@@ -59,9 +59,9 @@ const  onSubmit = async (data) => {
   
 //}
 }
-//const onEyeClick = () =>{
-//	seteye(!eye)
-//}
+const onEyeClick = () =>{
+	seteye(!eye)
+}
 
 const confirmSignUp = async () => {
 	try {
