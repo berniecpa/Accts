@@ -103,7 +103,7 @@ const onEyeClick = () =>{
 													<input   className={`form-control  ${errors?.email ? "error-input" : "" }`} type="text" value={value} onChange={onChange} autoComplete="false"  />
 
 												)}
-												defaultValue="admin@dreamguys.co.in"
+												defaultValue=""
 												/>
 											
 									<small>{errors?.email?.message}</small>
@@ -119,7 +119,7 @@ const onEyeClick = () =>{
 												<span onClick={onEyeClick} className={`fa toggle-password" ${eye ? "fa-eye-slash" : "fa-eye" }`}/>
 											</div>
 										)}
-										defaultValue="123456"
+										defaultValue=""
 										/>
 											
 									<small>{errors?.password?.message}</small>

@@ -27,8 +27,8 @@ const Login = (props) => {
     const [passworderror,setPasswordError] = useState("");
     const [formgroup,setFormGroup] = useState("");
     const [inputValues,setInputValues] = useState({
-    email:"admin@dreamguys.co.in",
-    password:"123456",
+    //email:"admin@dreamguys.co.in",
+   // password:"123456",
     });
 
 	const {
@@ -88,7 +88,7 @@ return (
                         <input   className={`form-control  ${errors?.email ? "error-input" : "" }`} type="text" value={value} onChange={onChange} autoComplete="false"  />
 
                       )}
-                      defaultValue="admin@dreamguys.co.in"
+                      defaultValue=""
 										/>
 											
 									<small>{errors?.email?.message}</small>
@@ -104,7 +104,7 @@ return (
                           <span onClick={onEyeClick} className={`fa toggle-password" ${eye ? "fa-eye-slash" : "fa-eye" }`}/>
                         </div>
                       )}
-                      defaultValue="123456"
+                      defaultValue=""
                       />
 											
 									<small>{errors?.password?.message}</small>
