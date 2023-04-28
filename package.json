@@ -4,6 +4,7 @@
   "homepage": ".",
   "private": true,
   "dependencies": {
+    "@aws-amplify/ui-react": "^4.6.0",
     "@babel/core": "^7.17.2",
     "@babel/preset-react": "^7.10.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
@@ -23,6 +24,7 @@
     "@testing-library/user-event": "^7.1.2",
     "antd": "^4.24.8",
     "apexcharts": "^3.23.0",
+    "aws-amplify": "^5.1.4",
     "babel-loader": "^8.1.0",
     "bootstrap": "^5.2.3",
     "bootstrap-daterangepicker": "^3.1.0",
