@@ -46,23 +46,53 @@ const Register = (props) => {
 		resolver: yupResolver(schema),
 	  })
     
-  const  onSubmit = (data) => {
-	console.log("data", data)
+const  onSubmit = async (data) => {
+	await signUp(data);
    
-  if(data.password != "123456") {
-	setError('password', {
-	  message: 'password is mismatch',
-	})
-} else {
-  clearErrors('password')
-  props.history.push('login') 
+  //if(data.password != "123456") {
+	//setError('password', {
+	 // message: 'password is mismatch',
+	//})
+//} else {
+  //clearErrors('password')
+  //props.history.push('login') 
   
+//}
 }
-}
-const onEyeClick = () =>{
-	seteye(!eye)
-}
- 
+//const onEyeClick = () =>{
+//	seteye(!eye)
+//}
+
+const confirmSignUp = async () => {
+	try {
+	  await Auth.confirmSignUp(username, code);
+	} catch (error) {
+	  console.log('error confirming sign up', error);
+	}
+  }
+
+
+
+const signUp = async (data) {
+      const { email, password } = data;
+      try {
+        const { user } = await Auth.signUp({
+          username: email,
+          password,
+          attributes: {
+            email,          // optional
+            phone_number,   // optional - E.164 number convention
+            // other custom attributes 
+          },
+          autoSignIn: { // optional - enables auto sign in after user is confirmed
+            enabled: true,
+          }
+        });
+        console.log(user);
+      } catch (error) {
+        console.log('error signing up:', error);
+      }
+    }
     
   
         return (
