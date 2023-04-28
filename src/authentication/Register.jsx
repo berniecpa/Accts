@@ -73,7 +73,7 @@ const confirmSignUp = async () => {
 
 
 
-const signUp = async (data) {
+const signUp = async (data) => {
       const { email, password } = data;
       try {
         const { user } = await Auth.signUp({
