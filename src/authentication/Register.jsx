@@ -32,8 +32,8 @@ const Register = (props) => {
     const [passworderror,setPasswordError] = useState("");
     const [formgroup,setFormGroup] = useState("");
     const [inputValues,setInputValues] = useState({
-    email:"admin@dreamguys.co.in",
-    password:"123456",
+    //email:"admin@dreamguys.co.in",
+    //password:"123456",
     });
 
 	const {
